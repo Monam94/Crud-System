@@ -1,0 +1,13 @@
+tr
+{
+   padding: 60px 0;
+}
+*
+{
+    font-family: 'Segoe UI light';
+}
+.myAlert{
+    color: #fff;
+    background-color: rgba(125, 53, 220, 0.651);
+    border-radius: .25rem;
+}

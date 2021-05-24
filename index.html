@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body >
+
+    <div class="container my-5 py-5 shadow rounded W-50">
+      <h1 class="text-center">CRUD System</h1>
+      <label>Product Name:</label>
+      <input type="text" class="form-control " id="ProductName" />
+      <div class="alert myAlert d-none" role="alert">
+        <strong>Please start with capital letter...</strong>
+      </div>
+   
+
+      <label>Product Category:</label>
+      <input type="text" class="form-control" id="ProductCategory" />
+
+      <label>Product Price:</label>
+      <input type="text" class="form-control" id="ProductPrice" />
+
+      <label>Product Description:</label>
+      <textarea type="text" class="form-control" id="ProductDescription"></textarea>
+      <div class="alert myAlert my-5 d-none" role="alert" id="lastAlert">
+        <strong>Please enter all fields...</strong>
+      </div>
+      <button id="addBtn"  class="btn btn-dark my-5 W-50 " onclick="addProduct();" >Add Product</button>
+      <button id="updateBtn" class="btn btn-dark my-5 W-50 " onclick="updateProduct();" >Update Product</button>
+    </div>
+  
+
+    <input type="text" class="form-control w-50 m-auto my-5" placeholder="search for any Product"  
+    onkeyup="search(this.value)">
+    <table class=" w-75 mx-auto my-5 table-dark text-center">
+      <thead>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Delete</th>
+        <th>Update</th>
+      </thead>
+      <tbody id="tbody">
+     
+      
+      </tbody>
+    </table>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
